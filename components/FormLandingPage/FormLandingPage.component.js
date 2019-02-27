@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Button } from 'react-native';
 import CustomTextField from '../CustomTextField/CustomTextField.component';
 import Header from '../Header/Header.component';
 import { httpGet } from '../../utils/httpGet';
@@ -8,6 +8,8 @@ import { URL_FOR_GETTING_FORM_FIELDS, URL_FOR_POSTING_FORM_DATA } from '../../co
 import SaveButton from '../SaveButton/SaveButton.component';
 
 export default class FormLandingPage extends Component {
+  id = this.props.navigation.getParam('id');
+
   state ={
     rows: [],
     formFields: [],
@@ -75,6 +77,12 @@ export default class FormLandingPage extends Component {
           {this.state.rows.map((value, index) => value)}
         </View>
         <SaveButton onPress={() => this.submitForm()} />
+        <Button
+          onPress={() => this.props.navigation.navigate('Response', {
+            id: this.id,
+          })}
+          title="Responses"
+        />
       </View>
     );
   }

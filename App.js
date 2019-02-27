@@ -3,6 +3,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import LandingScreen from './components/LandingScreen/LandingScreen.component';
 import NewForm from './components/NewForm/NewForm.component';
 import FormLandingPage from './components/FormLandingPage/FormLandingPage.component';
+import FormResponse from './components/FormResponse/FormResponse.component';
 
 const RootStack = createStackNavigator({
   Home: {
@@ -19,6 +20,12 @@ const RootStack = createStackNavigator({
   },
   FillForm: {
     screen: FormLandingPage,
+    navigationOptions: {
+      header: null,
+    },
+  },
+  Response: {
+    screen: FormResponse,
     navigationOptions: {
       header: null,
     },
