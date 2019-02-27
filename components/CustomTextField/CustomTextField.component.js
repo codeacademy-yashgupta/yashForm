@@ -8,7 +8,7 @@ export default class CustomTextField extends Component {
     return (
       <View>
         <TextInput
-          onChange={this.props.onChange}
+          onChangeText={this.props.onChangeText}
           style={styles.textInput}
         />
       </View>

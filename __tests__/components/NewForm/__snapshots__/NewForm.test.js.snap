@@ -79,6 +79,7 @@ exports[`NewForm should render correctly 1`] = `
   <View>
     <TextInput
       allowFontScaling={true}
+      onChangeText={[Function]}
       style={
         Object {
           "borderBottomColor": "black",
