@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import {
+  Text, TouchableOpacity, View, StyleSheet,
+} from 'react-native';
 import style from './FormCard.style';
 
 const styles = StyleSheet.create(style);
 export default class FormCard extends Component {
   render() {
+    const { id, title, createdAt } = this.props;
     return (
-      <View style={styles.formCard}>
-        <Text style={styles.formTitle}>Hi</Text>
+      <TouchableOpacity style={styles.formCard} key={id}>
+        <Text style={styles.formTitle}>{title}</Text>
         <View
           style={styles.formHorizontalBar}
         />
-        <Text style={styles.formCreatedAt}>Created On: 15/01/2019</Text>
-      </View>
+        <Text style={styles.formCreatedAt}>
+          Created At
+          {' '}
+          {createdAt}
+        </Text>
+      </TouchableOpacity>
     );
   }
 }
