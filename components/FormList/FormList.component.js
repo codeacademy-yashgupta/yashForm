@@ -8,7 +8,7 @@ export default class FormList extends Component {
     const forms = this.props;
     console.log(JSON.stringify(forms.forms));
     forms.forms.map(form => (
-      rows.push(<FormCard title={form.formName} createdAt={form.createdAt} />)));
+      rows.push(<FormCard title={form.formName} createdAt={form.createdAt} id={form.formId} onPress={this.props.onPress} navigation={this.props.navigation} />)));
     return (
       <ScrollView>
         {rows}

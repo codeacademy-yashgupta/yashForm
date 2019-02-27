@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
-import { APP_THEME_COLOR, APP_TEXT_COLOR } from '../../constants';
+import {
+  View, TouchableOpacity, Text, StyleSheet,
+} from 'react-native';
+import style from './SaveButton.style';
 
+const styles = StyleSheet.create(style);
 export default class SaveButton extends Component {
   render() {
     return (
@@ -9,14 +12,9 @@ export default class SaveButton extends Component {
 
         <TouchableOpacity
           onPress={this.props.onPress}
-          style={{
-            width: '100%', backgroundColor: APP_THEME_COLOR, position: 'absolute', bottom: 0, height: 50,
-          }}
+          style={styles.buttonView}
         >
-          <Text style={{
-            color: APP_TEXT_COLOR, fontSize: 22, textAlign: 'center', marginTop: 10,
-          }}
-          >
+          <Text style={styles.buttonText}>
             SAVE
 
           </Text>

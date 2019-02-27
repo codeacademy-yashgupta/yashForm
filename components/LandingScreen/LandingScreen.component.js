@@ -23,7 +23,7 @@ export default class LandingScreen extends Component {
     return (
       <View style={styles.container}>
         <Header isLandingPage="true" navigation={this.props.navigation} />
-        <FormList forms={forms} />
+        <FormList forms={forms} navigation={this.props.navigation} />
         <FloatingAddButton navigation={this.props.navigation} />
       </View>
     );

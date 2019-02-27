@@ -10,6 +10,7 @@ export default class CustomTextField extends Component {
         <TextInput
           onChangeText={this.props.onChangeText}
           style={styles.textInput}
+          placeholder={this.props.placeholder}
         />
       </View>
     );
