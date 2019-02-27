@@ -11,4 +11,7 @@ export default {
   headerImage: {
     height: 47, resizeMode: 'contain', marginTop: 6, position: 'absolute', right: -50,
   },
+  backButton: {
+    marginTop: 12,
+  },
 };

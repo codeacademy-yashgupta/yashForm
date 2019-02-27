@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatingAddButton should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#3700B3",
+      "borderRadius": 50,
+      "bottom": 0,
+      "marginBottom": 30,
+      "marginRight": 30,
+      "padding": 15,
+      "position": "absolute",
+      "right": 0,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../public/icons/baseline_add_white_48pt_3x.png",
+        }
+      }
+      style={
+        Object {
+          "height": 40,
+          "width": 40,
+        }
+      }
+    />
+  </View>
+</View>
+`;

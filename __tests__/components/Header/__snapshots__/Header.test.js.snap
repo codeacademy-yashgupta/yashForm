@@ -12,6 +12,34 @@ exports[`Header should render correctly 1`] = `
     }
   }
 >
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../public/icons/baseline_arrow_back_white_18dp.png",
+        }
+      }
+      style={
+        Object {
+          "marginTop": 12,
+        }
+      }
+    />
+  </View>
   <Text
     style={
       Object {

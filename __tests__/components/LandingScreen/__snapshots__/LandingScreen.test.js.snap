@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingScreen should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#3700B3",
+        "flexDirection": "row",
+        "height": 60,
+        "marginTop": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source=""
+        style={
+          Object {
+            "marginTop": 12,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 22,
+          "marginLeft": 20,
+          "marginTop": 16,
+        }
+      }
+    >
+      Header
+    </Text>
+    <Image
+      source={
+        Object {
+          "testUri": "../../../public/icons/baseline_more_vert_white_48pt_3x.png",
+        }
+      }
+      style={
+        Object {
+          "height": 47,
+          "marginTop": 6,
+          "position": "absolute",
+          "resizeMode": "contain",
+          "right": -50,
+        }
+      }
+    />
+  </View>
+  <RCTScrollView>
+    <View />
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#3700B3",
+        "borderRadius": 50,
+        "bottom": 0,
+        "marginBottom": 30,
+        "marginRight": 30,
+        "padding": 15,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../public/icons/baseline_add_white_48pt_3x.png",
+          }
+        }
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
